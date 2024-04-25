@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gami Screen</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <link rel="link rel" preconnect href="https://dafont.com/pt/neuropol.font">
+    <link rel="preconnect" href="https://dafont.com/pt/neuropol.font" crossorigin>
+    <link href="https://dafont.com/pt/neuropol.font" ref="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <header>
+            <div class="container-grid">
+                <img src="" alt="Logo da empresa Gami Screen">
+                <nav class="menu">
+                    <a href="sobre">Sobre nós</a>
+                    <a href="faq">FAQ</a>
+                    <a href="cases">Cases de Sucesso</a>
+                    <a href="fale conosco">Fale Conosco</a>
+                    <a href="depoimentos">Depoimentos</a>
+                </nav>
+                <button><svg xmlns=""
+                    viewBox="">
+                    <path
+                        d=""/>
+                </svg></button>
+            </div>
+        </header>
+        <div class="container-grid conteudo-banner">
+            <p></p>
+
+        </div>
+
+
+
+
+    </div>
+</body>

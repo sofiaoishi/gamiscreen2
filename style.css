@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Chopin";
+    src: url(fonts/Chopin-Light.ttf);
+}
+
+:root {
+    --azul-gamiscreen: #150578;
+    --laranja-gamiscreen: #f06449;
+    --cinza-gamiscreen: #dee7e7;
+    --azulzinho-gamiscreen: #4361ee;
+    --preto-gamiscreen: #010400;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    /* margin 20px - Espaçamento externo de 20px */
+    /* margin 20px 10px - Espaçamento 20px na vertical, 10px na horizontal*/
+    /* margin 20px 10px 5px - Espaçamento 20px para cima, 10px na horizontal, 5px para baixo */
+    /* margin 20px 10px 5px 2px - Espaçamento 20px para cima, 10px para a direita, 5px para baixo, 2px para a esquerda */
+
+    margin: 0 auto;
+}
+
+.banner {
+    /* vh é a porcentagem da ALTURA da telas */
+    /* vw é a porcentagem da LARGURA da tela */
+    height: 100vh;
+
+    background-image: linear-gradient(90deg, rgb(14, 17, 104) 0%, rgba(19, 19, 137, 0.8) 100%), url(img/bg-room.png);
+    background-repeat: no-repeat;
+
+    background-position: 165% 40%;
+}
+
+header {
+    height: 165px;
+}
+
+header button {
+    display: none;
+}
+
+header img {
+    width: 234px;
+}
+
+header .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-size: 18px;
+    font-family: "Neuropol";
+
+    color: white;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: white;
+}
+
+.conteudo-banner {
+    height: calc(100vh - 280px);
+
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-banner p {
+    color: white;
+
+    font-family: "Neuropol";
+    font-size: 32px;
+}
+
+.conteudo-banner span {
+    display: block;
+
+    overflow: hidden;
+
+    border-right: 5px solid var(--laranja-gamiscreen);
+    white-space: nowrap;
+
+
+    animation:
+        digitando 2s steps(40, end),
+        cursor 0.75s step-end infinite
+    ;
+}
+
+@keyframes digitando {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--laranja-gamifica);
+    }
+}
+
