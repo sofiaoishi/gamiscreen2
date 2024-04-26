@@ -36,13 +36,13 @@ html {
 
 .banner {
     /* vh é a porcentagem da ALTURA da telas */
-    /* vw é a porcentagem da LARGURA da tela */
+
     height: 100vh;
 
-    background-image: linear-gradient(90deg, rgb(14, 17, 104) 0%, rgba(19, 19, 137, 0.8) 100%), url(img/bg-room.png);
+    background-image: linear-gradient(90deg, rgb(14, 17, 104) 0%, rgba(19, 19, 137, 0.8) 100%), url(img/Group\ 15.png);
     background-repeat: no-repeat;
 
-    background-position: 165% 40%;
+    /* background-position: 165% 40%; */
 }
 
 header {
@@ -74,7 +74,7 @@ header .container-grid {
 
 .menu a {
     font-size: 18px;
-    font-family: "Neuropol";
+    font-family: "Chopin";
 
     color: white;
 
@@ -107,35 +107,7 @@ header .container-grid {
 
     overflow: hidden;
 
-    border-right: 5px solid var(--laranja-gamiscreen);
     white-space: nowrap;
-
-
-    animation:
-        digitando 2s steps(40, end),
-        cursor 0.75s step-end infinite
-    ;
 }
 
-@keyframes digitando {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes cursor {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: var(--laranja-gamifica);
-    }
-}
 
