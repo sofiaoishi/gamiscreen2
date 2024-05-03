@@ -26,23 +26,15 @@ html {
     width: 80vw;
     max-width: 1400px;
 
-    /* margin 20px - Espaçamento externo de 20px */
-    /* margin 20px 10px - Espaçamento 20px na vertical, 10px na horizontal*/
-    /* margin 20px 10px 5px - Espaçamento 20px para cima, 10px na horizontal, 5px para baixo */
-    /* margin 20px 10px 5px 2px - Espaçamento 20px para cima, 10px para a direita, 5px para baixo, 2px para a esquerda */
-
     margin: 0 auto;
 }
 
 .banner {
-    /* vh é a porcentagem da ALTURA da telas */
 
     height: 100vh;
 
-    background-image: linear-gradient(90deg, rgb(14, 17, 104) 0%, rgba(19, 19, 137, 0.8) 100%), url(img/Group\ 15.png);
+    background-image: linear-gradient(90deg, rgb(14, 17, 104) 0%, rgba(27, 27, 92, 0.8) 100%), url(img/Group\ 15.png);
     background-repeat: no-repeat;
-
-    /* background-position: 165% 40%; */
 }
 
 header {
@@ -110,4 +102,230 @@ header .container-grid {
     white-space: nowrap;
 }
 
+#sobre {
+    height: 800px;
+    padding: 100px 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+h2 {
+    font-family: "Neuropol";
+    font-size: 40px;
+}
+
+#sobre p {
+    font-family: "Chopin";
+    font-size: 22px;
+
+    text-align: left;
+
+    line-height: 1.5;
+}
+
+#cases {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#cases h2 {
+    margin-bottom: 70px;
+}
+
+#cases p {
+    font-family: "Chopin"
+}
+
+#cases veja mais button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--azulzinho-gamiscreen);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 22px;
+    font-family: "Neuropol";
+    font-weight: 700; /* Bold */
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#cases veja mais button:hover {
+    background-color: #ad4929;
+}
+
+#faq {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#faq h2 {
+  color: #150578;
+}
+
+#faq p {
+  color: #dee7e7;
+}
+
+#faq a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+#faq a:hover {
+  text-decoration: underline;
+}
+
+#contato {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato h2 {
+    margin-bottom: 70px;
+}
+
+#contato form {
+    width: 50%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 80px;
+    background-color: var(--roxo-gamifica);
+
+    color: white;
+    font-family: "Montserrat";
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: white;
+    background-color: #150578;
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: white;
+    background-color: #150578;
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label, .campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input, .campo-descricao textarea {
+    font-family: "Montserrat";
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--azulzinho-gamiscreen);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--azulzinho-gamiscreen);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Montserrat";
+    font-weight: 700; /* Bold */
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: #dee7e7;
+}
+
+footer {
+    height: 290px;
+
+    background-color: var(--azul-gamiscreen);
+}
+
+footer .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
