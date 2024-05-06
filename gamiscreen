@@ -45,7 +45,7 @@
         </p>
         <img src="img/Rectangle 27.png" alt="">
         <img src="img/Is there a future for mobile_🔮 (1) 1.png" alt="">
-        <img src="img/Group 6.png" alt="">
+        <img src="img/Rectangle 19.png" alt="">
 
     </section>
     <section class="container-grid" id="cases">
@@ -112,12 +112,9 @@
 
 <section id="Depoimentos">
     <h2>Depoimentos</h2>
-    <p>Somos uma empresa inovadora especializada em criar soluções de gamificação personalizadas para empresas de todos os portes e setores</p>
-    <p>Combinando a expertise em inteligência artificial e o conhecimento profundo de design de jogos, nossa equipe desenvolve estratégias e plataformas interativas para elevar a experiência do usuário e impulsionar resultados excepcionais.
-    </p>
-    <img src="img/Rectangle 27.png" alt="">
-    <img src="img/Is there a future for mobile_🔮 (1) 1.png" alt="">
-    <img src="img/Group 6.png" alt="">
+    <p>Depoimentos</p>
+    <img src="img/Frame 2.png" alt="">
+    <img src="img/Group 17.png" alt="">
 
 </section>
 <section class="container-grid" id="depoimentos">
@@ -125,11 +122,18 @@
     <div class="container-cards">
 
         <div class="card">
-            <img src="img/Rectangle 24.png" alt="">
-            <img src="img/Group 17.png" alt="">
             <img src="img/Rectangle 12.png" alt="">
-            <p>A empresa biomove tem como principal objetivo trazer a sustentabilidade por meio da mobilidade. 
-                A partir disso, nós criamos um site e todo o visual para promover a marca de aluguel de automóveis sustentáveis.</p>
+                <h2>Jason Momoa</h2>
+            <p>"Serviço incrível e uma ótima
+                experiência em geral".</p>
+                <h2>Tony Stark</h2>
+            <p>"Testemunhamos uma mudança 
+                    notável no desempenho da 
+                    equipe após implantação".</p>
+                <h2>Michael Myers</h2>
+            <p>"O sistema ajuda no 
+                desempenho a partir dos 
+                desafios, impressionante".</p>
         </div>
 
 </div>
