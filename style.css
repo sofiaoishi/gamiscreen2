@@ -1,14 +1,11 @@
 @font-face {
-    font-family: "Chopin";
-    src: url(fonts/Chopin-Light.ttf);
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 :root {
-    --azul-gamiscreen: #150578;
-    --laranja-gamiscreen: #f06449;
-    --cinza-gamiscreen: #dee7e7;
-    --azulzinho-gamiscreen: #4361ee;
-    --preto-gamiscreen: #010400;
+    --roxo-gamifica: #47208b;
+    --laranja-gamifica: #f06638;
 }
 
 /* Reset CSS */
@@ -16,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -26,15 +24,23 @@ html {
     width: 80vw;
     max-width: 1400px;
 
+    /* margin 20px - Espaçamento externo de 20px */
+    /* margin 20px 10px - Espaçamento 20px na vertical, 10px na horizontal*/
+    /* margin 20px 10px 5px - Espaçamento 20px para cima, 10px na horizontal, 5px para baixo */
+    /* margin 20px 10px 5px 2px - Espaçamento 20px para cima, 10px para a direita, 5px para baixo, 2px para a esquerda */
+
     margin: 0 auto;
 }
 
 .banner {
-
+    /* vh é a porcentagem da ALTURA da telas */
+    /* vw é a porcentagem da LARGURA da tela */
     height: 100vh;
 
-    background-image: linear-gradient(90deg, rgb(14, 17, 104) 0%, rgba(27, 27, 92, 0.8) 100%), url(img/Group\ 15.png);
+    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8) 100%), url(img/bg-room.png);
     background-repeat: no-repeat;
+
+    background-position: 165% 40%;
 }
 
 header {
@@ -66,7 +72,7 @@ header .container-grid {
 
 .menu a {
     font-size: 18px;
-    font-family: "Chopin";
+    font-family: "Anta";
 
     color: white;
 
@@ -90,7 +96,7 @@ header .container-grid {
 .conteudo-banner p {
     color: white;
 
-    font-family: "Neuropol";
+    font-family: "Anta";
     font-size: 32px;
 }
 
@@ -99,7 +105,36 @@ header .container-grid {
 
     overflow: hidden;
 
+    border-right: 5px solid var(--laranja-gamifica);
     white-space: nowrap;
+
+
+    animation:
+        digitando 2s steps(40, end),
+        cursor 0.75s step-end infinite
+    ;
+}
+
+@keyframes digitando {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--laranja-gamifica);
+    }
 }
 
 #sobre {
@@ -114,13 +149,13 @@ header .container-grid {
 }
 
 h2 {
-    font-family: "Neuropol";
-    font-size: 40px;
+    font-family: "Anta";
+    font-size: 28px;
 }
 
 #sobre p {
-    font-family: "Chopin";
-    font-size: 22px;
+    font-family: "Montserrat";
+    font-size: 17px;
 
     text-align: left;
 
@@ -138,56 +173,120 @@ h2 {
     margin-bottom: 70px;
 }
 
-#cases p {
-    font-family: "Chopin"
+.container-cards {
+    display: flex;
+    justify-content: space-between;
 }
 
-#cases veja mais button {
-    height: 40px;
-    width: 60%;
+.card {
+    height: 400px;
+    width: 250px;
 
-    background-color: var(--azulzinho-gamiscreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    background-color: var(--roxo-gamifica);
+
+    border-radius: 4px;
+
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+    height: 55%;
+    width: 100%;
+
+    border-radius: 4px 4px 0px 0px;
+}
+
+.card p {
     color: white;
+
+    font-family: "Montserrat";
+    font-size: 16px;
+
+    text-align: left;
+
+    padding: 7%;
+}
+
+.card button {
+    width: 90%;
+    height: 40px;
+
+    background-color: var(--laranja-gamifica);
 
     border: none;
     border-radius: 4px;
 
-    font-size: 22px;
-    font-family: "Neuropol";
-    font-weight: 700; /* Bold */
+    color: white;
 
-    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 600;
 
     cursor: pointer;
 
-    transition: background-color 500ms;
+    transition: background-color 500ms ease;
 }
 
-#cases veja mais button:hover {
+.card button:hover {
     background-color: #ad4929;
 }
 
-#faq {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+#portifolio {
+    height: 250px;
+
+    background-image: url(img/bonecos.png);
+    background-size: 250px;
+
+    background-attachment: fixed;
+
+    position: relative;
+
+    margin-bottom: 120px;
 }
 
-#faq h2 {
-  color: #150578;
+.filtro {
+    width: 100%;
+    height: 100%;
+
+    background-color: #47208bc2;
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-#faq p {
-  color: #dee7e7;
+#portifolio .container-grid {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#faq a {
-  text-decoration: none;
-  color: #007bff;
+#portifolio a {
+    width: fit-content;
+
+    color: white;
+
+    font-family: "Anta";
+    font-size: 28px;
+
+    z-index: 1;
+
+    transition: 200ms;
 }
 
-#faq a:hover {
-  text-decoration: underline;
+#portifolio a:hover {
+    transform: scale(1.05);
+    transition: 200ms;
 }
 
 #contato {
@@ -212,7 +311,7 @@ h2 {
     align-items: center;
 
     border-radius: 80px;
-    background-color: var(--azul-gamiscreen);
+    background-color: var(--roxo-gamifica);
 
     color: white;
     font-family: "Montserrat";
@@ -247,7 +346,7 @@ h2 {
     height: 40px;
 
     color: white;
-    background-color: #150578;
+    background-color: #351868;
 
     border: none;
     border-radius: 4px;
@@ -259,7 +358,7 @@ h2 {
 
 .campo-descricao textarea {
     color: white;
-    background-color: #150578;
+    background-color: #351868;
 
     border: none;
     border-radius: 4px;
@@ -271,11 +370,13 @@ h2 {
     resize: none;
 }
 
-.campo label, .campo-descricao label {
+.campo label,
+.campo-descricao label {
     margin-bottom: 15px;
 }
 
-.campo input, .campo-descricao textarea {
+.campo input,
+.campo-descricao textarea {
     font-family: "Montserrat";
     font-size: 17px;
 }
@@ -287,22 +388,22 @@ h2 {
 
 .campo input:focus,
 .campo-descricao textarea:focus {
-    outline: 2px solid var(--azulzinho-gamiscreen);
+    outline: 2px solid var(--laranja-gamifica);
 }
 
 #contato form button {
     height: 40px;
     width: 60%;
 
-    background-color: var(--azulzinho-gamiscreen);
+    background-color: var(--laranja-gamifica);
     color: white;
 
     border: none;
     border-radius: 4px;
 
     font-size: 17px;
-    font-family: "Chopin";
-    font-weight: 700; /* Bold */
+    font-family: "Montserrat";
+    font-weight: 700;
 
     text-transform: uppercase;
 
@@ -312,13 +413,13 @@ h2 {
 }
 
 #contato form button:hover {
-    background-color: #dee7e7;
+    background-color: #ad4929;
 }
 
 footer {
     height: 290px;
 
-    background-color: var(--azul-gamiscreen);
+    background-color: var(--roxo-gamifica);
 }
 
 footer .container-grid {
@@ -331,7 +432,7 @@ footer .container-grid {
 
 .redes-sociais {
     height: 50%;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -357,7 +458,7 @@ footer .container-grid {
 }
 
 .icones-redes a:hover {
-    color: var(--laranja-gamiscreen);
+    color: var(--laranja-gamifica);
 }
 
 @media screen and (max-width: 1300px) {
@@ -377,7 +478,7 @@ footer .container-grid {
     header svg {
         fill: white;
     }
-    
+
     nav.menu {
         height: 500px;
         width: 350px;
@@ -394,21 +495,20 @@ footer .container-grid {
         right: 0px;
     }
 
-    #sobre {
-        padding: 100px 15%;
-    }
+#sobre {
+    padding: 100px 15%;
+}
 
-    .card {
-        height: 320px;
-        width: 200px;
-    }
+.card {
+    height: 320px;
+    width: 200px;
+}
 
-    #contato form {
-        width: 75%;
-    }
+#contato form {
+    width: 75%;
+}
 }
 
 @media screen and (max-width: 1080px) {
-    
+ 
 }
-
